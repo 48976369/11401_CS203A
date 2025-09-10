@@ -20,5 +20,5 @@
 - **Student ID:** 1131441  
 
 ## Repository Description  
-This repository is for the course CS203A (元智大學 課程存放區).  
-It will be used to store my learning notes, homework, and related materials.
+這個Repository是用於 CS203A 課程（元智大學課程存放區）。  
+它將用來儲存我的學習筆記、作業以及相關資料。  
