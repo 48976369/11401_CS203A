@@ -14,5 +14,11 @@
  - **Teaching Assistant:** To be announced
  - **Office Hours:**
    - Monday 14:00-16:00 (R1310)  
-   - Wednesday 14:00–16:00 (R1310)  
-   
+   - Wednesday 14:00–16:00 (R1310)
+ ## Student Information  
+- **Name:** 余俊霆  
+- **Student ID:** 1131441  
+
+## Repository Description  
+This repository is for the course CS203A (元智大學 課程存放區).  
+It will be used to store my learning notes, homework, and related materials.
