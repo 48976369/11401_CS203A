@@ -14,14 +14,26 @@
  */
 
 #include "hash_fn.h"
+#include <stdio.h>
+#include <stdlib.h> // For abs()
 
 int myHashInt(int key, int m) {
     // TODO: replace with your own design
-    return key % m;  // division method example
+    if (m <= 0) {     
+        return 0;
+    }
+    return abs(key) % m;  
+    // division method example
 }
 
 int myHashString(const char* str, int m) {
+    if (m <= 0) return 0;
     unsigned long hash = 0;
+    int c;
+
+    while ((c = *str++)) {
+        hash = hash * 31 + c;
+    }
     // TODO: replace with your own design
     return (int)(hash % m); // basic division method
 }

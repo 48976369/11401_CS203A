@@ -13,14 +13,21 @@
    Developer: Yu-Feng Huang <yfhuang@saturn.yzu.edu.tw>
  */
 #include "hash_fn.hpp"
+#include <iostream>
+#include <cmath>   // for std::abs
+#include <string>  // for std::string
 
 int myHashInt(int key, int m) {
+    if (m <= 0) return 0;
     // TODO: replace with your own design
-    return key % m;  // basic division method
+    return std::abs(key) % m; // basic division method
 }
 
 int myHashString(const std::string& str, int m) {
+    if (m <= 0) return 0;
     unsigned long hash = 0;
-    // TODO: replace with your own design
-    return static_cast<int>(hash % m);  // basic division method
+    for (char c : str) {
+        hash = hash * 31 + c;
+    }
+    return (int)(hash % m);  // basic division method
 }
